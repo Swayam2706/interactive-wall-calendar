@@ -1,0 +1,20 @@
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 48px 16px 72px;
+}
+
+/* Subtle "wall" label at the very top */
+.app-root::before {
+  content: 'WALL CALENDAR';
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}

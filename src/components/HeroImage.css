@@ -1,0 +1,99 @@
+.hero-wrap {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  background: #1c1c2e;
+  /* Spiral binding sits above this */
+  padding-top: 10px;
+}
+
+.hero-inner {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+
+/* Multi-stop gradient: keeps top readable, darkens bottom for text */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 30, 0.08)  0%,
+    rgba(10, 10, 30, 0.20) 40%,
+    rgba(10, 10, 30, 0.68) 85%,
+    rgba(10, 10, 30, 0.80) 100%
+  );
+}
+
+/* Geometric angled slice — paper peeks through at the bottom */
+.hero-angle {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: var(--paper);
+  clip-path: polygon(0 100%, 100% 100%, 100% 52%, 0 100%);
+  z-index: 2;
+}
+
+/* Month + year */
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 28px;
+  z-index: 3;
+}
+
+.hero-month-name {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5.5vw, 3.2rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.55);
+}
+
+.hero-year {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+/* Season badge — top-right corner */
+.hero-badge {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 3;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .hero-wrap { height: 200px; padding-top: 8px; }
+  .hero-text { bottom: 22px; left: 18px; }
+  .hero-badge { top: 14px; right: 14px; }
+}

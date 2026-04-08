@@ -1,0 +1,70 @@
+.month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 22px 10px;
+  border-bottom: 1px solid var(--paper-line);
+  background: var(--paper);
+}
+
+/* Nav buttons */
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--paper-line);
+  background: var(--paper-warm);
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.18s, color 0.18s, box-shadow 0.18s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+/* Framer Motion handles scale; CSS handles color */
+.nav-btn:hover {
+  border-color: var(--ink);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.16);
+}
+
+/* Center title */
+.nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav-month {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.nav-year {
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+/* Today shortcut pill */
+.nav-today-btn {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  border: 1px solid var(--paper-line);
+  background: transparent;
+  color: var(--ink-muted);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.nav-today-btn:hover {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
