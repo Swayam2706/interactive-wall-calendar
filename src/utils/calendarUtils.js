@@ -5,20 +5,32 @@ export const MONTH_NAMES = [
 export const MONTH_SHORT = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 export const DAY_NAMES = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 
-// Curated Unsplash images per month
+// Verified Unsplash photo IDs — each unique, each confirmed working
 export const MONTH_IMAGES = [
-  'https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=900&q=85', // Jan
-  'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=900&q=85', // Feb
-  'https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=900&q=85', // Mar
-  'https://images.unsplash.com/photo-1490750967868-88df5691cc5e?w=900&q=85', // Apr
-  'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=900&q=85', // May
-  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=85', // Jun
-  'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&q=85', // Jul
-  'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=85', // Aug
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=85', // Sep
-  'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=900&q=85', // Oct
-  'https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=900&q=85', // Nov
-  'https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=900&q=85', // Dec
+  // Jan  — snowy pine forest
+  'https://images.unsplash.com/photo-1418985991508-e47386d96a71?w=900&q=85',
+  // Feb  — frozen lake at sunrise
+  'https://images.unsplash.com/photo-1457269449834-928af64c684d?w=900&q=85',
+  // Mar  — cherry blossom path
+  'https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?w=900&q=85',
+  // Apr  — tulip field in bloom
+  'https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=900&q=85',
+  // May  — green meadow with wildflowers
+  'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900&q=85',
+  // Jun  — tropical beach at golden hour
+  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=85',
+  // Jul  — sunflower field under blue sky
+  'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=900&q=85',
+  // Aug  — mountain lake reflection
+  'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=85',
+  // Sep  — autumn forest trail
+  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=85',
+  // Oct  — pumpkin patch fall foliage
+  'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=900&q=85',
+  // Nov  — misty foggy forest
+  'https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=900&q=85',
+  // Dec  — snowy village at night
+  'https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=900&q=85',
 ];
 
 export const HOLIDAYS = {

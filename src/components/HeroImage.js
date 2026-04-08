@@ -31,6 +31,9 @@ export default function HeroImage({ currentDate, direction }) {
             src={MONTH_IMAGES[month]}
             alt={`${MONTH_NAMES[month]} ${year}`}
             className="hero-img"
+            onError={e => {
+              e.target.style.display = 'none';
+            }}
           />
           <div className="hero-overlay" />
           <div className="hero-angle" />
